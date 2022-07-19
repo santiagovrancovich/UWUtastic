@@ -5,9 +5,9 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   root: "./",
-  publicDir: "../public",
+  publicDir: "./public",
   build: {
-    outDir: "../dist",
+    outDir: "./dist",
   },
   server: {
     port: 8080,
