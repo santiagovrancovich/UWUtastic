@@ -1,0 +1,36 @@
+.image-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 15vh;
+}
+
+.face{
+    grid-column: 1;
+    grid-row: 2;
+    transition: 0.2s;
+}
+
+.sleeping-particle{
+    grid-column: 1;
+    grid-row: 1;
+    width: 3em;
+    align-self: end;
+    opacity: 0;
+}
+
+.playing-particles{
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    align-self: end;
+    img {
+        width: 3em;
+        opacity: 0;
+    }
+}
+
+.switch{
+    transition: 0.3s;
+}

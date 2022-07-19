@@ -1,0 +1,56 @@
+$font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font-size: 16px;
+
+
+.app-container{
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh 60vh 10vh 20vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-family: $font;
+    font-size: $font-size;
+    user-select: none;
+    height: 100vh;
+    width: 100vw;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.color-changer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 0;
+    height: 10vh;
+}
+
+.screen-changer{
+    width: 10vw;
+    height: 100vh;
+    &.right{
+        right: 0px;
+        grid-column: 3;
+    }
+    &.left{
+        left: 0px;    
+        grid-column: 1;
+    }
+}
+
+.face-container{   
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-container{
+    grid-column: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

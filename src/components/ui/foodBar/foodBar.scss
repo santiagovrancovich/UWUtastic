@@ -1,0 +1,50 @@
+.foodBar-container {
+    grid-row: 4;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: calc(100vw - 2em);
+    margin: 1em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 1em;
+    opacity: 0;
+    img {
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0.5em;
+        border-radius: 1em;
+        transition: 0.5s;
+        &:hover {
+            background-color: lightgray;
+        }
+    }
+}
+
+.draggeable-item{
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.5em;
+}
+
+.food-area{
+    height: 20%;
+    width: 40%;
+    margin-top: 6em;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    z-index: 10;
+}
+
+.vomit-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    img {
+        width: 90vw;
+    }
+}

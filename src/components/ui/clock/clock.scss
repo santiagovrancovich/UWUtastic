@@ -1,0 +1,29 @@
+.clock{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    img {
+        grid-column: 1;
+        grid-row: 1;
+        width: 9em;
+        justify-self: center;
+    }
+    span {
+        grid-column: 1;
+        grid-row: 1;
+        color: #7bee7b;
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 0.2em;
+        width: fit-content;
+        justify-self: center;
+    }
+    a{
+        padding: 0em 0.2em 0em 0.2em;
+        align-self: center;
+    }
+}

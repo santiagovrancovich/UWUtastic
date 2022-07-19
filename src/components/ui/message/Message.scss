@@ -1,0 +1,20 @@
+.text-container{
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+    width: fit-content;
+    justify-self: center;
+    bottom: 10vh;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #fff;
+    font-weight: 500;
+    opacity: 0;
+    p{
+        margin: 0;
+    }
+}
+
+.typed-cursor{
+    display: none;
+}
