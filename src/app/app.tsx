@@ -120,7 +120,15 @@ function App() {
                 </div>
             )       
         default:
-            break;
+            return (
+                <div {...swipeController} className="app-container" style={{backgroundColor: color, pointerEvents: context.state.clickeable ? "auto" : "none"}} >
+                    <span className="color-changer" onClick={() => setcolor(getRandomColor(color))}></span>
+                    <div className="face-container" onClick={() => setblush(blush+0.2)} >
+                        <Face blush={blush} />
+                    </div>
+                    <Message display={display} sentence={sentence} refresh={blush} />
+                </div>
+            )
     }
 }
 

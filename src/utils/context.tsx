@@ -10,7 +10,7 @@ const initialGlobalValue = {
     mouthOpen: false
 }
 
-export const globalContext = createContext(undefined)
+export const globalContext = createContext({dispatch: Reducer(initialGlobalValue, ""), state: initialGlobalValue})
 
 export default function GlobalContextProvider(props) {
     const [state, dispatch] = useReducer(Reducer, initialGlobalValue)
