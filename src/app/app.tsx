@@ -94,7 +94,7 @@ function App() {
                     <div className="face-container" onClick={() => setblush(blush+0.2)} >
                         <Face blush={blush} />
                     </div>
-                    <Message display={display} sentence={sentence} refresh={blush} />
+                    <Message display={display} sentence={sentence}/>
                 </div>
             )
         case "foodScreen":
@@ -126,7 +126,7 @@ function App() {
                     <div className="face-container" onClick={() => setblush(blush+0.2)} >
                         <Face blush={blush} />
                     </div>
-                    <Message display={display} sentence={sentence} refresh={blush} />
+                    <Message display={display} sentence={sentence}/>
                 </div>
             )
     }
