@@ -30,7 +30,7 @@ export default function Message(props) {
             } ,
             complete: () => context.dispatch({type:"pauseClick"})
         }))
-    }, [props.refresh])
+    }, [props.sentence])
 
     useLayoutEffect(() => {
         props.display ? messageAnimation.play() : null
